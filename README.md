@@ -3,7 +3,7 @@ Library
 
 Design: This concept and initial structure was created as an assignment by Professor Dave Matuszek at the University of Pennsylvania. All implementation details and code developed by Ryan Smith and Steve Schenkel.
 
-Program to run the basic functions of a public/private library.
+Overview: Program to run the basic functions of a public/private library.
 
 Use: This file does not have a GUI. It is intended to be run from the command line by navigating to the containing folder and running python RunLibrary.py. Note: All other classes and text file containing initial collection of books must be contained in the same folder.
 
