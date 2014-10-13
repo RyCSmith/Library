@@ -1,3 +1,4 @@
+# Written by Ryan Smith and Steven Schenkel
 from Book import *
 from Patron import *
 from Calendar import *
