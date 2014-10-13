@@ -284,7 +284,8 @@ class Library(object):
         
 
     def quit(self):
-        pass
+        self.talk("Due to a budget crisis, the library is now closed forever!")
+        
 
     def get_collection(self):
         """This returns the collection of books and is only used for unit testing."""
