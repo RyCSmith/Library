@@ -178,10 +178,20 @@ class LibraryTest(unittest.TestCase):
         library.close()
         self.assertFalse(library.get_is_open())
 
+    def test_has_library_card(self):
+        self.assertTrue(library.has_library_card("Ryan Smith"))
+        self.assertFalse(library.has_library_card("Arvind"))
 
+    def test_is_found_already(self):
+        full_book_collection = library.get_collection()
+        library.found_books = [full_book_collection[11], full_book_collection[12], full_book_collection[13], full_book_collection[14]]
+        self.assertTrue(library.is_found_already(full_book_collection[11]))
+        self.assertFalse(library.is_found_already(full_book_collection[15]))
 
-
-
+    def test_quit(self):
+        library.response = ''
+        library.quit()
+        self.assertEqual("Due to a budget crisis, the library is now closed forever!\n", library.response)
 
 
 
